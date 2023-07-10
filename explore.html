@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assests/css/style2.css" />
+    <title>Air Sense</title>
+  </head>
+  <body>
+    <div class="page-heading">
+        <h1>CHECK YOUR CITY'S AQI</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="/images/Delhi.svg" alt="" />
+        <p class="heading">Delhi, India</p>
+        <p class="aqi-display">
+          <span>117 AQI</span>
+        </p>
+      </div>
+      <div class="card">
+        <img src="/images/Bengaluru.svg" alt="" />
+        <p class="heading">Bengaluru, India</p>
+        <p class="aqi-display">
+          <span>28 AQI</span>
+        </p>
+      </div>
+      <div class="card">
+        <img src="/images/Mumbai.svg" alt="" />
+        <p class="heading">Mumbai, India</p>
+        <p class="aqi-display">
+          <span>52 AQI</span>
+        </p>
+      </div>
+      <div class="card">
+        <img src="/images/Ahmedabad.svg" alt="" />
+        <p class="heading">Ahmedabad, India</p>
+        <p id="aqi-display">
+          <span style="color: white;">26 AQI</span>
+        </p>
+      </div>
+    </div>
+    <div class="container-input">
+      <input
+        type="text"
+        placeholder="Search"
+        name="text"
+        class="input"
+        id="city"
+      />
+      <svg
+        fill="#000000"
+        width="20px"
+        height="20px"
+        viewBox="0 0 1920 1920"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+    <div class="button">
+      <button class="btn" type="submit" id="submit">Search</button>
+    </div>
+
+    <div class="location-container">
+        <div>
+      <div class="location-full">
+        <img src="/images/location.png" alt="/" />
+        <h3 class="location-name"><span id="cityname"></span></h3>
+      </div>
+      
+        <h4 class="aqi-heading">AIR QUALITY INDEX</h4>
+        <div class="aqi-value" id="overall_aqi"></div>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
